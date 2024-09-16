@@ -1,0 +1,97 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+table{
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem 0.5rem rgb(253, 217, 163);
+}
+th,
+td {
+  padding: 1rem;
+  border: 1px solid rgb(253, 217, 163);
+  justify-items: center;
+}
+.section6 {
+  width:100%;
+  margin: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  font-weight: bold;
+}
+.child {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  transition: all 0.3s cubic-bezier(0.68, 0.85, 0.265, 1.85);
+  border-radius: 50px;
+  margin: 0 5px;
+  box-shadow:
+      inset 1px 1px 2px #fff,
+      0 0 5px #4442;
+}
+.child:hover {
+  background-color: white;
+  background-position:
+      -100px 100px,
+      -100px 100px;
+  transform: perspective(180px) rotateX(60deg) translateY(2px);
+}
+.child-1:hover {
+  box-shadow: 0px 10px 10px #1e90ff;
+}
+.child-2:hover {
+  box-shadow: 0px 10px 10px #ff0000;
+}
+.child-3:hover {
+  box-shadow: 0px 10px 10px #000;
+}
+.child-4:hover {
+  box-shadow: 0px 10px 10px #00ff00;
+}
+.button {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  transition-duration: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-timing-function: cubic-bezier(0.68, -0.85, 0.265, 1.55);
+}
+.child:hover .button {
+  transform: translate3d(0px, 20px, 30px) perspective(80px) rotateX(-60deg) translateY(2px) translateZ(10px);
+}
