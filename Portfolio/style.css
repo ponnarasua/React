@@ -1,7 +1,7 @@
 body{
     height: 100%;
     width: 100%;
-    background-image: url('src/bg.webp');
+    background-image: url('src/assets/img/bg.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
