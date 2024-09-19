@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.active{
+    background-color: #4f4955;
+    color: white;
+    /* padding: 0.1rem; */
+    border-radius: 5px;
+    
+}
