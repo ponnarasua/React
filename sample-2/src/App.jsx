@@ -3,7 +3,7 @@ import Error from "./pages/error"
 import WebLayouts from "./layouts/WebLayout"
 import Profile from "./pages/Profile"
 import Projects from "./pages/Projects"
-import Contact from "./pages/contact"
+import Contact from "./pages/Contact"
 const App = () => {
     return (
         <>

@@ -1,6 +1,7 @@
 import React, { Suspense } from 'react'
 import Navbar from '../components/Navbar'
 import { Outlet } from 'react-router-dom'
+import Footer from '../components/footer'
 
 const WebLayout = () => {
     const isloggedin = true
@@ -12,15 +13,13 @@ const WebLayout = () => {
                 <Suspense fallback={"loading"}>
                     <Outlet />
                 </Suspense>
-
-            ) :
-                (
-                    <>
-                        Login to access data
-                    </>
-                )
-
-            }
+            ) : (
+                <>
+                    Login to access data
+                </>
+            )}
+            <Footer />
+            
         </>
     )
 }

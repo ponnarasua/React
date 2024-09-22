@@ -28,7 +28,7 @@ const Projects = () => {
                     </div>
                     <div className="">
                       <a href={item.link} target="_blank" rel="noopener noreferrer"
-                        className="inline-block text-base font-black text-blue-600 uppercase hover:text-white">Read More -&gt;</a>
+                        className="inline-block text-base  bottom-0 font-black text-blue-600 uppercase hover:text-white">Read More -&gt;</a>
                     </div>
                   </div>
                 </div>
