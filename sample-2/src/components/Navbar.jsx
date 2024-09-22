@@ -41,7 +41,7 @@ const Navbar = () => {
                                 )
                             })}
                         </ul>
-                        <User2 className='cursor-pointer h-10 w-10 text-black rounded-3xl border-2 border-white hover:bg-white  hover:border-black hover:text-white hover:bg-slate-500' onClick={() => setvisible(true)} />
+                        <User2 className='cursor-pointer h-10 w-10 text-black rounded-3xl border-2 border-white hover:bg-slate-500  hover:border-black hover:text-white hover:bg-slate-500' onClick={() => setvisible(true)} />
                     </div>
                 </div>
 
