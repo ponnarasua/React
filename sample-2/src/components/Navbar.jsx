@@ -4,7 +4,7 @@ import { Link, NavLink, useNavigate } from 'react-router-dom'
 
 const Navbar = () => {
     const navlist = [{
-        title: "Profile",
+        title: "About",
         path: "/"
     },
     {
@@ -28,7 +28,7 @@ const Navbar = () => {
     const [visible, setvisible] = useState(false)
     return (
         <>
-            <div className="w-full h-[4rem] flex justify-center items-center bg-slate-500 shadow-md shadow-slate-900 fixed">
+            <div className="w-full h-[4rem] flex justify-center items-center bg-slate-500 shadow-md shadow-slate-900 sticky top-0">
                 <div className="w-[80%] h-full flex justify-center items-center flex-row">
                     <div className='w-1/2 flex h-full justify-start items-center font-bold text-xl text-white '>Portfolio</div>
                     <div className='w-1/2 flex  h-full justify-end items-center'>
@@ -36,12 +36,12 @@ const Navbar = () => {
                             {navlist.map((item, index) => {
                                 return (
                                     <li key={index}>
-                                        <NavLink to={item.path} className='text-white hover:text-slate-400'>{item.title}</NavLink>
+                                        <NavLink to={item.path} className='text-white '>{item.title}</NavLink>
                                     </li>
                                 )
                             })}
                         </ul>
-                        <User2 className='cursor-pointer h-10 w-10 text-black rounded-full border-2 border-white hover:bg-white  hover:border-purple-500 hover:text-purple-500' onClick={() => setvisible(true)} />
+                        <User2 className='cursor-pointer h-10 w-10 text-black rounded-3xl border-2 border-white hover:bg-white  hover:border-black hover:text-white hover:bg-slate-500' onClick={() => setvisible(true)} />
                     </div>
                 </div>
 

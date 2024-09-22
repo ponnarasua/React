@@ -2,7 +2,7 @@ import Profilex from "../assets/profile.png";
 const Profile = () => {
   return (
     <>
-      <div className="App pt-[7%]">
+      <div className="App">
         <div className="w-full py-5 bg-gradient-to-r from-red-300 from-0% via-orange-200 via-50% via-green-200 via-100% ... inline-flex flex-row justify-self-center place-items-center rounded-b-3xl sticky">
           <div className="w-7/12 h-4/6 flex flex-row justify-center items-start">
             <img
