@@ -52,6 +52,16 @@
     border: 1px solid rgb(64,64,64,0.5);
     justify-items: center;
   }
+  @media screen and (max-width: 500px) {
+    .project {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      flex-direction: column;
+
+    }
+    
+  }
   .section6 {
     width:100%;
     display: flex;

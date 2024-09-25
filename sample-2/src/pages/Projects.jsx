@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import dotenv from 'dotenv';
+
 const Projects = () => {
   const [projectlist, setProjectlist] = useState([]);
   useEffect(() => {
-    axios.get('https://66e5273a5cc7f9b6273c6edc.mockapi.io/projec')
+    const url = import.meta.env.VITE_PROJECT_API;
+    axios.get(url)
       .then(response => {
         setProjectlist(response.data);
       })
@@ -13,16 +16,16 @@ const Projects = () => {
   }, []);
 
   return (
-    <>
-      <div className="w-full h-full flex flex-row flex-wrap justify-center items-center">
-        <ul className="list-none flex flex-row justify-center gap-0">
+    <><div className="w-full h-full flex flex-row flex-wrap gap-2 justify-center items-center">
+        <div className="w-full h-[10%] flex justify-center items-center px-10">
+        <ul className="list-none flex flex-row justify-center" class="project">
           {projectlist.map((item, index) => {
             return (
               <li key={index}>
-                <div className="m-[5%] w-[89%] h-[90%] flex flex-col shadow-2xl rounded-2xl hover:bg-zinc-800  hover:text-white">
+                <div className="mt-5 w-[95%] max-h-fit flex flex-col shadow-2xl rounded-2xl hover:bg-zinc-800  hover:text-white">
                   <div className="flex flex-col justify-between p-[10%] text-center">
                     <div>
-                      <p className="block mb-4 text-2xl font-black leading-tight hover:cursor-default ">{item.title}</p>
+                      <p className="block mb-4 text-2xl font-black leading-tight hover:cursor-default">{item.title}</p>
                       <p className="mb-4 text-justify hover:cursor-default">{item.desc}</p>
                     </div>
                     <div className="">
@@ -44,6 +47,7 @@ const Projects = () => {
             )
           })}
         </ul>
+      </div>
       </div>
     </>
   )

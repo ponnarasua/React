@@ -5,24 +5,22 @@ import Profile from "./pages/Profile"
 import Projects from "./pages/Projects"
 import Contact from "./pages/Contact"
 import Admin from "./pages/Admin"
-import ProjectComponents from "./components/ProjectComponent"
+import ProjectComponents from "./components/projectComponent"
 
 const App = () => {
     return (
-        <>
-            <BrowserRouter>
-                <Routes>
-                    <Route element={<WebLayouts />} >
-                        <Route path="/" element={<Profile />} />
-                        <Route path="/projects" element={<Projects />} />
-                        <Route path="/contact" element={<Contact />} />
-                        <Route path="/admin" element={<Admin />}/>
-                        <Route path="/projectcomponents" element={<ProjectComponents />} />
-                        <Route path="*" element={<Error />} />
-                    </Route>
-                </Routes>
-            </BrowserRouter>
-        </>
+        <BrowserRouter>
+            <Routes>
+                <Route element={<WebLayouts />}>
+                    <Route path="/" element={<Profile />} />
+                    <Route path="/projects" element={<Projects />} />
+                    <Route path="/contact" element={<Contact />} />
+                    <Route path="/admin" element={<Admin />} />
+                    <Route path="/projectedit" element={<ProjectComponents />} />
+                    <Route path="*" element={<Error />} />
+                </Route>
+            </Routes>
+        </BrowserRouter>
     )
 }
 

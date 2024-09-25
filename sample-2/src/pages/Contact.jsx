@@ -3,7 +3,7 @@ import { useRef } from 'react';
 import axios from 'axios';
 
 const Contact = () => {
-  const url = "https://66e5273a5cc7f9b6273c6edc.mockapi.io/contact";
+  const url = import.meta.env.VITE_CONTACT_API;
   const nameRef = useRef(null);
   const emailRef = useRef(null);
   const phoneRef = useRef(null);
@@ -34,6 +34,7 @@ const Contact = () => {
   };
 
   return (
+    
     <div className="container px-4 mx-auto justify-center items-center m-12">
       <div className="max-w-md mx-auto px-8 py-6 bg-gray-100 rounded-lg shadow-lg">
         <h2 className="text-2xl font-semibold text-neutral-700 mb-4">Contact Us</h2>
