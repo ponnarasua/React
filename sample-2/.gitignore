@@ -11,6 +11,14 @@ node_modules
 dist
 dist-ssr
 *.local
+*.env
+*.tmp
+*.bak
+*.swp
+*.zip
+*.rar
+*.tar
+*.gz
 
 # Editor directories and files
 .vscode/*
