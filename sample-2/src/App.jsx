@@ -4,6 +4,9 @@ import WebLayouts from "./layouts/WebLayout"
 import Profile from "./pages/Profile"
 import Projects from "./pages/Projects"
 import Contact from "./pages/Contact"
+import Admin from "./pages/Admin"
+import ProjectComponents from "./components/ProjectComponent"
+
 const App = () => {
     return (
         <>
@@ -13,6 +16,8 @@ const App = () => {
                         <Route path="/" element={<Profile />} />
                         <Route path="/projects" element={<Projects />} />
                         <Route path="/contact" element={<Contact />} />
+                        <Route path="/admin" element={<Admin />}/>
+                        <Route path="/projectcomponents" element={<ProjectComponents />} />
                         <Route path="*" element={<Error />} />
                     </Route>
                 </Routes>

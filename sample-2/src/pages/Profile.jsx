@@ -3,7 +3,7 @@ const Profile = () => {
   return (
     <>
       <div className="App">
-        <div className="w-full py-5 bg-gradient-to-r from-red-300 from-0% via-orange-200 via-50% via-green-200 via-100% ... inline-flex flex-row justify-self-center place-items-center rounded-b-3xl sticky">
+        <div className="w-full py-5 -z-10 bg-gradient-to-r from-neutral-700 to-neutral-950 text-white inline-flex flex-row justify-self-center place-items-center rounded-b-3xl sticky">
           <div className="w-7/12 h-4/6 flex flex-row justify-center items-start">
             <img
               src={Profilex}
@@ -20,7 +20,7 @@ const Profile = () => {
           </div>
         </div>
         <div className="flex flex-col justify-center items-start m-5p">
-          <h1 className=" text-2xl font-bold text-orange-200 py-3">About Me</h1>
+          <h1 className=" text-2xl font-bold text-neutral-700 py-3">About Me</h1>
           <p className="text-justify">
             &nbsp;&nbsp;&nbsp;&nbsp;I am a Full Stack Developer with 2 years of
             experience in developing web applications. I have a strong knowledge
@@ -34,8 +34,8 @@ const Profile = () => {
           </p>
         </div>
         <div class="flex flex-col justify-center items-start m-5p">
-          <h1 class="text-2xl font-bold text-orange-200 py-3">Education</h1>
-          <table class="w-full border border-orange-200 border-collapse text-center">
+          <h1 class="text-2xl font-bold text-neutral-700 py-3">Education</h1>
+          <table class="w-full border border-neutral-700 border-collapse text-center">
             <tr>
               <th>Qualification</th>
               <th>Year</th>
@@ -59,7 +59,7 @@ const Profile = () => {
           </table>
         </div>
         <div class="flex flex-col items-start m-5p">
-          <h1 class="text-2xl font-bold text-orange-200 py-3">Skills</h1>
+          <h1 class="text-2xl font-bold text-neutral-700 py-3">Skills</h1>
           <ol className="list-disc text-justify px-10">
             <li>HTML</li>
             <li>CSS</li>
@@ -72,7 +72,7 @@ const Profile = () => {
           </ol>
         </div>
         <div className="flex flex-col items-start m-5p">
-          <h1 className="text-2xl font-bold text-orange-200 py-3">
+          <h1 className="text-2xl font-bold text-neutral-700 py-3">
             Internships
           </h1>
           <p>
@@ -147,6 +147,26 @@ const Profile = () => {
                 </svg>
               </button>
             </div>
+          </a>
+        </div>
+        <div className="m-5 mb-10 mx-[40%] flex flex-row justify-center items-center">
+          <a href="https://drive.google.com/file/d/1B8i26XpqGjskvA5O4CT9ilndTldKv1-f/view?usp=drive_link=download" target="_blank">
+            <button className="mb-2 cursor-pointer flex justify-around bg-neutral-700 px-3 py-2 rounded-full text-white tracking-wider shadow-xl hover:bg-neutral-0 hover:scale-105 duration-500 hover:ring-1 font-mono w-[150px]">
+              Resume
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="w-5 h-5 animate-bounce">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3">
+                </path>
+              </svg>
+            </button>
           </a>
         </div>
       </div>
